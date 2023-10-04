@@ -1,0 +1,79 @@
+<!-- employee-add.component.html -->
+
+<h2></h2>
+<form (submit)="onSubmit()" class="form-container">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <br/>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="employee.firstName" required> &nbsp; </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <br/>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="employee.lastName" required> &nbsp;
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <br/>
+      <input type="email" id="email" name="email" [(ngModel)]="employee.email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <br/>
+      <input type="date" id="dob" name="dob" [(ngModel)]="employee.dob" 
+      required  >
+      
+    </div>
+  </div>
+  
+<div class="form-row">
+  <div class="form-group">
+    <label for="address">Address</label>
+    <br/>
+    <input type="text" id="address" name="address" [(ngModel)]="employee.address" required>
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="contact">Contact</label>
+    <br/>
+    <input type="text" id="contact" name="contact" [(ngModel)]="employee.contact">
+  </div>
+</div>
+
+  <button type="submit" class="styled-button"   >Submit</button>
+</form>
+
+
+<!-- LOGIN FORM -->
+<h2>Login</h2>
+<form (submit)="onSubmit2()" class="form-container">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">Username</label>
+      <br/>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="username" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Password</label>
+      <br/>
+      <input type="date" id="dob" name="dob" [(ngModel)]="password" required>
+    </div>
+  </div>
+
+  <button type="submit" class="styled-button">Login</button>
+
+  <button
+  [disabled]="!authService.isLoggedIn()"
+  *ngIf="!authService.isLoggedIn()"
+  (click)="logout()">
+  Logout
+</button>
+
+</form>

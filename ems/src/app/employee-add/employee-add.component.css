@@ -1,0 +1,92 @@
+/* employee-add.component.css */
+
+/* Styling for the form container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Styling for form rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Styling for form groups */
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Styling for labels */
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Color variations for input fields */
+#firstName {
+  border-color: #ff7f50; /* Coral color */
+}
+
+#lastName {
+  border-color: #1e90ff; /* Dodger Blue color */
+}
+
+#email {
+  border-color: #32cd32; /* Lime Green color */
+}
+
+#dob {
+  border-color: #ff69b4; /* Hot Pink color */
+}
+
+#address {
+  border-color: #ffa500; /* Orange color */
+}
+
+#contact {
+  border-color: #00ced1; /* Dark Turquoise color */
+}
+
+/* Hover effect on input fields */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover {
+  border-color: #000; /* Black color */
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on submit button */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker Blue color */
+}

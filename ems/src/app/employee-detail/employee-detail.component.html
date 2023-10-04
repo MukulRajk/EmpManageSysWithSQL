@@ -1,0 +1,16 @@
+<!-- employee-detail.component-->
+<div class="employee-detail">
+    <h2></h2>
+    <div *ngIf="employees">
+      <p><strong>First Name:</strong> {{ employees.firstName }}</p>
+      <p><strong>Last Name:</strong> {{ employees.lastName }}</p>
+      <p><strong>Date of Birth:</strong> {{ employees.dob }}</p>
+      <p><strong>Contact:</strong> {{ employees.contact }}</p>
+      <p><strong>Address:</strong> {{ employees.address }}</p>
+      <p><strong>Email:</strong> {{ employees.email }}</p>
+    </div>
+    <div *ngIf="!employees">
+      <p>Employee not found.</p>
+    </div>
+  </div>
+  
